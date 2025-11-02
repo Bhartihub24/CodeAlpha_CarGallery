@@ -1,0 +1,94 @@
+
+ body {
+  text-align: center;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Gallery grid layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  /* transition: transform 0.3s ease, filter 0.3s ease; */
+  transition:0.4s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2) contrast(1.1);
+}
+
+/* Lightbox styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blur;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  /* color: white; */
+  color:black;
+  cursor: pointer;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  /* color: white; */
+  color:black;
+  font-size: 40px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.gallery img {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+

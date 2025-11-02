@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lightbox.css">
+            
+</head>
+<body>
+    <h1>CAR GALLERY</h1>
+<div class="container">
+    <div class="filters">
+  <button onclick="applyFilter('none')">Normal</button>
+  <button onclick="applyFilter('grayscale(100%)')">Grayscale</button>
+  <button onclick="applyFilter('sepia(80%)')">Sepia</button>
+  <button onclick="applyFilter('blur(3px)')">Blur</button>
+  <button onclick="applyFilter('contrast(150%)')">High Contrast</button>
+</div>
+
+    <div class="gallery">
+        <a href="images (1).jpg" data-lightbox="models" data-title="caption1">
+           <img src="images (1).jpg">   
+        </a>
+        <a href="images (2).jpg" data-lightbox="models" data-title="caption2">
+           <img src="images (2).jpg">
+        </a>
+        <a href="images.jfif.jpg" data-lightbox="models" data-title="caption3">
+           <img src="images.jfif.jpg">
+        </a>
+        <a href="download (2).jpg" data-lightbox="models" data-title="caption4">
+           <img src="download (2).jpg">
+        </a>
+        <a href="download (3).jpg" data-lightbox="models" data-title="caption5">
+            <img src="download (3).jpg">
+         </a>
+        <a href="download (4).jpg" data-lightbox="models" data-title="caption6">
+            <img src="download (4).jpg">
+        </a>
+        <a href="download (5).jpg" data-lightbox="models" data-title="caption7">
+            <img src="download (5).jpg">
+         </a>
+        <a href="download (6).jpg" data-lightbox="models" data-title="caption8">
+             <img src="download (6).jpg">
+        </a>
+        <a href="download.jpg" data-lightbox="models" data-title="caption9">
+            <img src="download.jpg">
+        </a>
+        
+    </div>
+    <div class="upload-section" style="text-align: center; margin-top: 20px;">
+  <input type="file" id="imageUpload" accept="image/*">
+</div>
+
+</div>
+
+<script src="lightbox-plus-jquery.js"></script> 
+ 
+</body>
+</html>
